@@ -4,7 +4,6 @@ import 'package:animetest/animes_module/state/anime_trending_state/anime_trendin
 import 'package:animetest/animes_module/state_manager/trending_anime_state_manager/trending_anime_state_manager.dart';
 import 'package:animetest/animes_module/ui/widget/grid_anime_card/grid_anime_card.dart';
 import 'package:animetest/animes_module/ui/widget/list_anime_card/list_anime_card.dart';
-import 'package:animetest/shared/widget/loading_indicator/loading_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:inject/inject.dart';
 
@@ -67,27 +66,30 @@ class _TrendingScreenState extends State<TrendingScreen> {
       child: Stack(
 
         children: [
-        ListView.builder(
-           itemCount: animes.length,
-           padding: EdgeInsetsDirectional.fromSTEB(0,70 ,0, 0),
-           itemBuilder: (BuildContext context, int index) {
-            return FlatButton(
-              onPressed: (){
+        Container(
+          padding: EdgeInsetsDirectional.fromSTEB(0,70 ,0, 0),
+          child: ListView.builder(
+             itemCount: animes.length,
+
+             itemBuilder: (BuildContext context, int index) {
+              return FlatButton(
+                onPressed: (){
 
 
-              },
-              child:  Container(
-                padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
-                child: ListAnimeCard(
-                  name:animes[index].name,
-                  image:animes[index].image ,
-                  status: animes[index].status,
-                ),
-              )
+                },
+                child:  Container(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
+                  child: ListAnimeCard(
+                    name:animes[index].name,
+                    image:animes[index].image ,
+                    status: animes[index].status,
+                  ),
+                )
 
 
-            );
-          }),
+              );
+            }),
+        ),
 
           Positioned(
             left: 0.0,
