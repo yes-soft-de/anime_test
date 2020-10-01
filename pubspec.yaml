@@ -27,19 +27,19 @@ dependencies:
       path: package/inject
 
   # Camera
-  camera: ^0.5.8+7
+#  camera: ^0.5.8+7
 
   # Video
-  video_player: ^0.11.0
+#  video_player: ^0.11.0
 
   # Paths
-  path_provider: ^1.6.18
+#  path_provider: ^1.6.18
 
   # Shared Prefs
   shared_preferences: ^0.5.12
 
   # Open Url in Chrome
-  url_launcher: ^5.7.0
+#  url_launcher: ^5.7.0
 
   # Network Agent
   dio: ^3.0.10
@@ -53,38 +53,38 @@ dependencies:
   validators: ^2.0.1
 
   # Svg Loader
-  flutter_svg: ^0.19.0
+#  flutter_svg: ^0.19.0
 
   # Streams and RX
   rxdart: ^0.24.1
 
   # ORM, Database SQL
-  sqfentity: ^1.4.0+1
+#  sqfentity: ^1.4.0+1
 
   # Firebase Libs
-  firebase_core: ^0.5.0
-  firebase_auth: ^0.18.0+1
-  firebase_analytics: ^6.0.0
-  firebase_remote_config: ^0.4.0
-  cloud_firestore: ^0.14.0+2
+#  firebase_core: ^0.5.0
+#  firebase_auth: ^0.18.0+1
+#  firebase_analytics: ^6.0.0
+#  firebase_remote_config: ^0.4.0
+#  cloud_firestore: ^0.14.0+2
 
   # Google Sign In
-  google_sign_in: ^4.5.4
-  sign_in_with_apple: ^2.5.2
+#  google_sign_in: ^4.5.4
+#  sign_in_with_apple: ^2.5.2
 
   # Localization
-  gen_lang: 0.1.3
+#  gen_lang: 0.1.3
 
   # Internationalization
-  intl: ^0.16.1
-  intl_translation: ^0.17.10
-  intl_utils: ^1.6.5
+#  intl: ^0.16.1
+#  intl_translation: ^0.17.10
+#  intl_utils: ^1.6.5
 
   # Toasts
   fluttertoast: ^7.1.1
 
   # UUID
-  uuid: ^2.2.2
+#  uuid: ^2.2.2
 
 dev_dependencies:
   flutter_test:
@@ -100,20 +100,20 @@ dev_dependencies:
       path: package/inject_generator
 
   # Generate Language Files
-  lang_table: 0.2.0
+#  lang_table: 0.2.0
 
   # Icons Generator
-  flutter_launcher_icons: "^0.7.3"
+#  flutter_launcher_icons: "^0.7.3"
 
 flutter:
   uses-material-design: true
-#  assets:
-#    - assets/images/
+  assets:
+    - assets/images/
 
 flutter_intl:
   enabled: true
 
-flutter_icons:
-  android: "launcher_icon"
-  ios: true
-  image_path: "assets/images/logo.jpg"
+#flutter_icons:
+#  android: "launcher_icon"
+#  ios: true
+#  image_path: "assets/images/logo.jpg"
