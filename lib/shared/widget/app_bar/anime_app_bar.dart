@@ -33,11 +33,11 @@ class AnimeAppBarWidget extends StatelessWidget implements PreferredSizeWidget {
         builder: (BuildContext context) {
           return IconButton(
             icon: Icon(
-                Icons.filter_list,
+                Icons.line_weight,
             color: Colors.black,
             ),
             onPressed: () {
-//              Scaffold.of(context).openDrawer();
+              Scaffold.of(context).openDrawer();
             },
             tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
           );

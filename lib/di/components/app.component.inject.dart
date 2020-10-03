@@ -13,6 +13,9 @@ import '../../animes_module/manager/trending_anime_manager/trending_anime_manger
     as _i9;
 import '../../animes_module/repository/trending_anime_repository/trending_anime_repository.dart'
     as _i10;
+import '../../anim_notification/routing_home.dart' as _i11;
+import '../../anim_notification/ui/screen/anim_notification.dart' as _i12;
+import '../../anim_setting/ui/screen/anim_setting.dart' as _i13;
 
 class AppComponent$Injector implements _i1.AppComponent {
   AppComponent$Injector._();
@@ -23,7 +26,8 @@ class AppComponent$Injector implements _i1.AppComponent {
     return injector;
   }
 
-  _i3.MyApp _createMyApp() => _i3.MyApp(_createAnimesModule());
+  _i3.MyApp _createMyApp() =>
+      _i3.MyApp(_createAnimesModule(), _createRotingModule());
   _i4.AnimesModule _createAnimesModule() =>
       _i4.AnimesModule(_createShowsScreen());
   _i5.ShowsScreen _createShowsScreen() =>
@@ -38,6 +42,10 @@ class AppComponent$Injector implements _i1.AppComponent {
       _i9.TrendingAnimeManager(_createTrendingAnimeRepository());
   _i10.TrendingAnimeRepository _createTrendingAnimeRepository() =>
       _i10.TrendingAnimeRepository();
+  _i11.RotingModule _createRotingModule() =>
+      _i11.RotingModule(_createAnimNotification(), _createAnimSetting());
+  _i12.AnimNotification _createAnimNotification() => _i12.AnimNotification();
+  _i13.AnimSetting _createAnimSetting() => _i13.AnimSetting();
   @override
   _i3.MyApp get app => _createMyApp();
 }

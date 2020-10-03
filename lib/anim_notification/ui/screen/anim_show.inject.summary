@@ -1,0 +1,26 @@
+{
+  "asset": "asset:animetest/lib/anim_show/ui/screen/anim_show.dart",
+  "summary": {
+    "injector": [],
+    "module": [],
+    "injectable": [
+      {
+        "name": "AmimShow",
+        "constructor": {
+          "name": "",
+          "kind": "constructor",
+          "injectedType": {
+            "lookupKey": {
+              "root": "asset:animetest/lib/anim_show/ui/screen/anim_show.dart#AmimShow",
+              "qualifier": null
+            },
+            "isProvider": false
+          },
+          "singleton": false,
+          "asynchronous": false,
+          "dependencies": []
+        }
+      }
+    ]
+  }
+}

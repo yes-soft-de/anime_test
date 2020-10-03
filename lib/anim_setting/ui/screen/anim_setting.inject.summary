@@ -1,0 +1,26 @@
+{
+  "asset": "asset:animetest/lib/anim_setting/ui/screen/anim_setting.dart",
+  "summary": {
+    "injector": [],
+    "module": [],
+    "injectable": [
+      {
+        "name": "AnimSetting",
+        "constructor": {
+          "name": "",
+          "kind": "constructor",
+          "injectedType": {
+            "lookupKey": {
+              "root": "asset:animetest/lib/anim_setting/ui/screen/anim_setting.dart#AnimSetting",
+              "qualifier": null
+            },
+            "isProvider": false
+          },
+          "singleton": false,
+          "asynchronous": false,
+          "dependencies": []
+        }
+      }
+    ]
+  }
+}
