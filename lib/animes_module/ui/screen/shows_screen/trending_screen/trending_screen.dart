@@ -21,7 +21,7 @@ class TrendingScreen extends StatefulWidget {
 class _TrendingScreenState extends State<TrendingScreen> {
   List<TrendingModel> animes = [];
   TrendingAnimeState currentState = TrendingAnimeStateInit();
-  bool grid = true;
+  bool grid = false;
 
   void initState() {
     super.initState();

@@ -1,0 +1,26 @@
+{
+  "asset": "asset:animetest/lib/shared/widget/app_drawer/app_drawer.dart",
+  "summary": {
+    "injector": [],
+    "module": [],
+    "injectable": [
+      {
+        "name": "AppDrawerWidget",
+        "constructor": {
+          "name": "",
+          "kind": "constructor",
+          "injectedType": {
+            "lookupKey": {
+              "root": "asset:animetest/lib/shared/widget/app_drawer/app_drawer.dart#AppDrawerWidget",
+              "qualifier": null
+            },
+            "isProvider": false
+          },
+          "singleton": true,
+          "asynchronous": false,
+          "dependencies": []
+        }
+      }
+    ]
+  }
+}

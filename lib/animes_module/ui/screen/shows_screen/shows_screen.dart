@@ -5,6 +5,7 @@ import 'package:animetest/animes_module/ui/screen/shows_screen/by_category_scree
 import 'package:animetest/animes_module/ui/screen/shows_screen/trending_screen/trending_screen.dart';
 import 'package:animetest/shared/project_color/project_color.dart';
 import 'package:animetest/shared/widget/app_bar/anime_app_bar.dart';
+import 'package:animetest/shared/widget/app_drawer/app_drawer.dart';
 import 'package:animetest/shared/widget/loading_indicator/loading_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:inject/inject.dart';
@@ -40,6 +41,7 @@ class _ShowsScreenState extends State<ShowsScreen> {
           title: 'Anime Shows',
           appBar: AppBar(),
         ),
+          drawer: AppDrawerWidget(),
           body:Column(
             children: [
               Container(

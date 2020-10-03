@@ -1,0 +1,26 @@
+{
+  "asset": "asset:animetest/lib/anim_notification/ui/screen/anim_notification.dart",
+  "summary": {
+    "injector": [],
+    "module": [],
+    "injectable": [
+      {
+        "name": "AnimNotification",
+        "constructor": {
+          "name": "",
+          "kind": "constructor",
+          "injectedType": {
+            "lookupKey": {
+              "root": "asset:animetest/lib/anim_notification/ui/screen/anim_notification.dart#AnimNotification",
+              "qualifier": null
+            },
+            "isProvider": false
+          },
+          "singleton": false,
+          "asynchronous": false,
+          "dependencies": []
+        }
+      }
+    ]
+  }
+}

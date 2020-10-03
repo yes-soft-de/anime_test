@@ -1,3 +1,4 @@
+import 'package:animetest/anim_notification/routing_home.dart';
 import 'package:animetest/animes_module/animes_module.dart';
 import 'package:animetest/animes_module/animes_routes.dart';
 import 'package:flutter/material.dart';
@@ -20,8 +21,8 @@ void main()async {
 @provide
 class MyApp extends StatefulWidget {
  final AnimesModule _animesModule;
-
- MyApp(this._animesModule);
+ final RotingModule _rotingModule;
+ MyApp(this._animesModule,this._rotingModule);
 
   @override
   _MyAppState createState() => _MyAppState();
@@ -32,6 +33,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     Map<String, WidgetBuilder> fullRoutesList = {};
     fullRoutesList.addAll(widget._animesModule.getRoutes());
+    fullRoutesList.addAll(widget._rotingModule.getRoutes());
 
     return MaterialApp(
 

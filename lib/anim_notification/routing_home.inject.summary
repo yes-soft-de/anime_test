@@ -1,17 +1,17 @@
 {
-  "asset": "asset:animetest/lib/main.dart",
+  "asset": "asset:animetest/lib/anim_notification/routing_home.dart",
   "summary": {
     "injector": [],
     "module": [],
     "injectable": [
       {
-        "name": "MyApp",
+        "name": "RotingModule",
         "constructor": {
           "name": "",
           "kind": "constructor",
           "injectedType": {
             "lookupKey": {
-              "root": "asset:animetest/lib/main.dart#MyApp",
+              "root": "asset:animetest/lib/anim_notification/routing_home.dart#RotingModule",
               "qualifier": null
             },
             "isProvider": false
@@ -21,14 +21,14 @@
           "dependencies": [
             {
               "lookupKey": {
-                "root": "asset:animetest/lib/animes_module/animes_module.dart#AnimesModule",
+                "root": "asset:animetest/lib/anim_notification/ui/screen/anim_notification.dart#AnimNotification",
                 "qualifier": null
               },
               "isProvider": false
             },
             {
               "lookupKey": {
-                "root": "asset:animetest/lib/anim_notification/routing_home.dart#RotingModule",
+                "root": "asset:animetest/lib/anim_setting/ui/screen/anim_setting.dart#AnimSetting",
                 "qualifier": null
               },
               "isProvider": false
