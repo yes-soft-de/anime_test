@@ -1,5 +1,6 @@
 import 'package:animetest/anim_notification/routing_home.dart';
 import 'package:animetest/animes_module/animes_routes.dart';
+import 'package:animetest/shared/project_color/project_color.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -15,23 +16,23 @@ class AnimeNavigationDrawer extends StatelessWidget {
       child: Stack(
         children: [
           // Background
-//          Positioned.fill(
-//            child: SvgPicture.asset(
-//              'assets/images/logo.svg',
-//              fit: BoxFit.cover,
-//              colorBlendMode: BlendMode.softLight,
-//            ),
-//          ),
-//
-//          Positioned.fill(
-//              child: Container(
-//            color: Colors.black54,
-//          )),
+          Positioned.fill(
+            child: SvgPicture.asset(
+              'assets/images/totoro.svg',
+              fit: BoxFit.cover,
+              colorBlendMode: BlendMode.softLight,
+            ),
+          ),
+
+          Positioned.fill(
+              child: Container(
+            color: Colors.black54,
+          )),
 
           // Foreground
           Positioned.fill(
               child: Container(
-            color: Color(0x882CC0CD),
+            color: ProjectColors.ThemeColor,
             child: Flex(
               direction: Axis.vertical,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -98,6 +99,7 @@ class AnimeNavigationDrawer extends StatelessWidget {
                 Flex(
                   direction: Axis.vertical,
                   children: [
+                    SizedBox(height: 50,),
                     GestureDetector(
                       onTap: () {
 
