@@ -1,0 +1,26 @@
+{
+  "asset": "asset:animetest/lib/animes_module/ui/screen/shows_screen/by_category_screen/by_category_screen.dart",
+  "summary": {
+    "injector": [],
+    "module": [],
+    "injectable": [
+      {
+        "name": "ByCategoryScreen",
+        "constructor": {
+          "name": "",
+          "kind": "constructor",
+          "injectedType": {
+            "lookupKey": {
+              "root": "asset:animetest/lib/animes_module/ui/screen/shows_screen/by_category_screen/by_category_screen.dart#ByCategoryScreen",
+              "qualifier": null
+            },
+            "isProvider": false
+          },
+          "singleton": false,
+          "asynchronous": false,
+          "dependencies": []
+        }
+      }
+    ]
+  }
+}

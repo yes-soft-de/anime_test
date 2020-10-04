@@ -1,0 +1,8 @@
+{
+  "asset": "asset:animetest/lib/animes_module/state/anime_trending_state/anime_trending_state.dart",
+  "summary": {
+    "injector": [],
+    "module": [],
+    "injectable": []
+  }
+}

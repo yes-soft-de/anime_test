@@ -1,0 +1,34 @@
+{
+  "asset": "asset:animetest/lib/animes_module/manager/trending_anime_manager/trending_anime_manger.dart",
+  "summary": {
+    "injector": [],
+    "module": [],
+    "injectable": [
+      {
+        "name": "TrendingAnimeManager",
+        "constructor": {
+          "name": "",
+          "kind": "constructor",
+          "injectedType": {
+            "lookupKey": {
+              "root": "asset:animetest/lib/animes_module/manager/trending_anime_manager/trending_anime_manger.dart#TrendingAnimeManager",
+              "qualifier": null
+            },
+            "isProvider": false
+          },
+          "singleton": false,
+          "asynchronous": false,
+          "dependencies": [
+            {
+              "lookupKey": {
+                "root": "asset:animetest/lib/animes_module/repository/trending_anime_repository/trending_anime_repository.dart#TrendingAnimeRepository",
+                "qualifier": null
+              },
+              "isProvider": false
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

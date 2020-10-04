@@ -1,20 +1,18 @@
-import 'package:animetest/animes_module/model/trending_model/trending_model.dart';
-import 'package:animetest/animes_module/state/anime_trending_state/anime_trending_state.dart';
-import 'package:animetest/animes_module/state_manager/trending_anime_state_manager/trending_anime_state_manager.dart';
 import 'package:animetest/animes_module/ui/screen/shows_screen/by_category_screen/by_category_screen.dart';
 import 'package:animetest/animes_module/ui/screen/shows_screen/trending_screen/trending_screen.dart';
+import 'package:animetest/navigation_module/ui/widget/navigation_drawer/anime_navigation_drawer.dart';
 import 'package:animetest/shared/project_color/project_color.dart';
 import 'package:animetest/shared/widget/app_bar/anime_app_bar.dart';
 import 'package:animetest/shared/widget/app_drawer/app_drawer.dart';
-import 'package:animetest/shared/widget/loading_indicator/loading_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:inject/inject.dart';
 
 @provide
 class ShowsScreen extends StatefulWidget {
   final TrendingScreen _trendingScreen;
+  final ByCategoryScreen _byCategoryScreen;
 
-  ShowsScreen(this._trendingScreen);
+  ShowsScreen(this._trendingScreen,this._byCategoryScreen);
 
   @override
   _ShowsScreenState createState() => _ShowsScreenState();
@@ -41,7 +39,7 @@ class _ShowsScreenState extends State<ShowsScreen> {
           title: 'Anime Shows',
           appBar: AppBar(),
         ),
-          drawer: AppDrawerWidget(),
+          drawer: AnimeNavigationDrawer(),
           body:Column(
             children: [
               Container(
@@ -62,8 +60,8 @@ class _ShowsScreenState extends State<ShowsScreen> {
                 height:MediaQuery.of(context).size.height*0.777 ,
                 child: TabBarView(
                   children: [
-                           ByCategoryScreen(),
-                          widget._trendingScreen,
+                           widget._byCategoryScreen,
+                           widget._trendingScreen,
                   ],
                 ),
               ),

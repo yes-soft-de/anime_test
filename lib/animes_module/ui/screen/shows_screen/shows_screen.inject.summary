@@ -1,0 +1,41 @@
+{
+  "asset": "asset:animetest/lib/animes_module/ui/screen/shows_screen/shows_screen.dart",
+  "summary": {
+    "injector": [],
+    "module": [],
+    "injectable": [
+      {
+        "name": "ShowsScreen",
+        "constructor": {
+          "name": "",
+          "kind": "constructor",
+          "injectedType": {
+            "lookupKey": {
+              "root": "asset:animetest/lib/animes_module/ui/screen/shows_screen/shows_screen.dart#ShowsScreen",
+              "qualifier": null
+            },
+            "isProvider": false
+          },
+          "singleton": false,
+          "asynchronous": false,
+          "dependencies": [
+            {
+              "lookupKey": {
+                "root": "asset:animetest/lib/animes_module/ui/screen/shows_screen/trending_screen/trending_screen.dart#TrendingScreen",
+                "qualifier": null
+              },
+              "isProvider": false
+            },
+            {
+              "lookupKey": {
+                "root": "asset:animetest/lib/animes_module/ui/screen/shows_screen/by_category_screen/by_category_screen.dart#ByCategoryScreen",
+                "qualifier": null
+              },
+              "isProvider": false
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
