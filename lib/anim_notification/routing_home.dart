@@ -8,8 +8,8 @@ import 'package:inject/inject.dart';
 
 @provide
 class RotingModule extends YesModule {
-  static const ROUTE_ANIM_SHOW_PAGE = '/login';
-  static const ROUTE_ANIM_SETTIING_PAGE = '/register';
+  static const ROUTE_ANIM_NOTIFICATION_PAGE = '/notification';
+  static const ROUTE_ANIM_SETTIING_PAGE = '/setting';
 
   final AnimNotification _animShow;
   final AnimSetting _animSetting;
@@ -18,7 +18,7 @@ class RotingModule extends YesModule {
 
   Map<String, WidgetBuilder> getRoutes() {
     return {
-      ROUTE_ANIM_SHOW_PAGE: (context) => _animShow,
+      ROUTE_ANIM_NOTIFICATION_PAGE: (context) => _animShow,
       ROUTE_ANIM_SETTIING_PAGE: (context) => _animSetting,
     };
   }

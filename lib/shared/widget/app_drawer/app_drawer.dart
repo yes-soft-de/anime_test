@@ -57,7 +57,7 @@ class AppDrawerWidget extends StatelessWidget {
               ),
               FlatButton(
                 onPressed: (){
-                  Navigator.pushNamed(context, RotingModule.ROUTE_ANIM_SHOW_PAGE);
+                  Navigator.pushNamed(context, RotingModule.ROUTE_ANIM_NOTIFICATION_PAGE);
                 },
                 child: ListTile(
                   title: Text("Notification",
