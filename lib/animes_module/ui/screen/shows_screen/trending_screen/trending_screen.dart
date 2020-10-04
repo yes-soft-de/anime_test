@@ -4,6 +4,7 @@ import 'package:animetest/animes_module/state/anime_trending_state/anime_trendin
 import 'package:animetest/animes_module/state_manager/trending_anime_state_manager/trending_anime_state_manager.dart';
 import 'package:animetest/animes_module/ui/widget/grid_anime_card/grid_anime_card.dart';
 import 'package:animetest/animes_module/ui/widget/list_anime_card/list_anime_card.dart';
+import 'package:animetest/shared/widget/loading_indicator/loading_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:inject/inject.dart';
 
@@ -22,6 +23,7 @@ class _TrendingScreenState extends State<TrendingScreen> {
   List<TrendingModel> animes = [];
   TrendingAnimeState currentState = TrendingAnimeStateInit();
   bool grid = false;
+  bool loading =true;
 
   void initState() {
     super.initState();
@@ -36,7 +38,7 @@ class _TrendingScreenState extends State<TrendingScreen> {
     if (currentState is TrendingAnimeStateFetchingSuccess) {
       TrendingAnimeStateFetchingSuccess state = currentState;
       animes = state.data;
-
+      loading = false;
       if(this.mounted){
         setState(() {});
       }
@@ -55,9 +57,11 @@ class _TrendingScreenState extends State<TrendingScreen> {
 
 
     }
-    return  grid ?
-        gridViewAnime():
-        listViewAnime();
+    return loading ?
+        LoadingIndicatorWidget():
+        grid ?
+            gridViewAnime():
+            listViewAnime();
   }
 
   Widget listViewAnime(){

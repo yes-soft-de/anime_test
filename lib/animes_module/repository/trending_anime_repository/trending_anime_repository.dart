@@ -23,7 +23,7 @@ class TrendingAnimeRepository{
 
   Future<List<TrendingModel>> getShows()async{
 
-    await Future.delayed(Duration(milliseconds: 100));
+    await Future.delayed(Duration(milliseconds: 2000));
 
     return list;
   }

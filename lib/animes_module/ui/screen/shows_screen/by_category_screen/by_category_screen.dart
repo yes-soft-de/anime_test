@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:inject/inject.dart';
+
+@provide
 class ByCategoryScreen extends StatefulWidget {
   @override
   _ByCategoryScreenState createState() => _ByCategoryScreenState();
