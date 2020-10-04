@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "748916378742",
+    "firebase_url": "https://anime-9ee09.firebaseio.com",
+    "project_id": "anime-9ee09",
+    "storage_bucket": "anime-9ee09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748916378742:android:69bc99dbbd322c59d4a357",
+        "android_client_info": {
+          "package_name": "whatEver.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748916378742-3mpfsfppdoif6cd907hnmn47f0qns3l5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJJ4IM1JimZwPQx2jkvdvipMCjGeN1Yu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748916378742-3mpfsfppdoif6cd907hnmn47f0qns3l5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
